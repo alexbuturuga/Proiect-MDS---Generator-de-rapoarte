@@ -135,5 +135,10 @@ namespace ProiectMDS
         {
 
         }
+
+        private void Inserare_KeyDown(object sender, KeyEventArgs e)
+        {
+          
+        }
     }
 }

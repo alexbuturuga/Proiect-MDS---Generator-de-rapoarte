@@ -33,7 +33,6 @@ namespace ProiectMDS
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -51,10 +50,16 @@ namespace ProiectMDS
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -78,6 +83,7 @@ namespace ProiectMDS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -116,15 +122,6 @@ namespace ProiectMDS
             this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button2_MouseClick);
             this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(358, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(463, 428);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -203,7 +200,7 @@ namespace ProiectMDS
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(122, 9);
+            this.label4.Location = new System.Drawing.Point(136, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 18);
             this.label4.TabIndex = 14;
@@ -319,11 +316,64 @@ namespace ProiectMDS
             this.saveFileDialog1.DefaultExt = "txt";
             this.saveFileDialog1.Filter = "Fișiere text (*.txt)|*.txt";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(358, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(463, 428);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::ProiectMDS.Properties.Resources.GR;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel7.Location = new System.Drawing.Point(828, 25);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 477);
+            this.panel7.TabIndex = 23;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel8.Location = new System.Drawing.Point(0, 497);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(828, 5);
+            this.panel8.TabIndex = 24;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel6.Location = new System.Drawing.Point(0, 25);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 472);
+            this.panel6.TabIndex = 25;
+            // 
             // Afisare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 502);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -345,9 +395,10 @@ namespace ProiectMDS
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,6 +427,10 @@ namespace ProiectMDS
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 

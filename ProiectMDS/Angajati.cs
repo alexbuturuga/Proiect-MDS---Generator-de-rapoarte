@@ -16,16 +16,17 @@ namespace ProiectMDS
     public partial class Angajati : Form
     {
         public int curent = 0;
-        public int i=0;
+        public int i = 0;
         bool p3vis = false;
         private bool isDragging = false;
         private Point lastMousePos;
-        SqlConnection c = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+ Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Database1.mdf;Integrated Security=True");
+        SqlConnection c = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Database1.mdf;Integrated Security=True");
         public Angajati()
         {
             InitializeComponent();
-            
+
         }
+    
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -220,7 +221,7 @@ namespace ProiectMDS
                     }
             }catch
             {
-              
+                c.Close();
             }
         }
 
@@ -234,6 +235,11 @@ namespace ProiectMDS
         {
             curent = 0;
             afisang();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

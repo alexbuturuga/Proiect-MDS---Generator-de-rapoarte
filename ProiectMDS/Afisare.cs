@@ -344,6 +344,7 @@ namespace ProiectMDS
                     }
 
                     c.Close();
+
                     int i = 1;
                     //date angajati
                     c.Open();
@@ -369,5 +370,7 @@ namespace ProiectMDS
                
             }
         }
+
+      
     }
 }

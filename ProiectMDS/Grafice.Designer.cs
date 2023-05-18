@@ -29,19 +29,23 @@ namespace ProiectMDS
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -65,6 +69,7 @@ namespace ProiectMDS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -104,51 +109,87 @@ namespace ProiectMDS
             this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 25);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(808, 26);
-            this.panel4.TabIndex = 6;
-            // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend7";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(0, 51);
+            legend1.Name = "Legend7";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 25);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.LabelForeColor = System.Drawing.Color.White;
-            series2.Legend = "Legend7";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(808, 444);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.LabelForeColor = System.Drawing.Color.White;
+            series1.Legend = "Legend7";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(808, 470);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "chart1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(12, 473);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Venit Total:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::ProiectMDS.Properties.Resources.GR;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel6.Location = new System.Drawing.Point(0, 25);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 470);
+            this.panel6.TabIndex = 26;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel8.Location = new System.Drawing.Point(5, 490);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(803, 5);
+            this.panel8.TabIndex = 27;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel7.Location = new System.Drawing.Point(803, 25);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 465);
+            this.panel7.TabIndex = 28;
+            // 
             // Grafice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 495);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Grafice";
@@ -158,6 +199,7 @@ namespace ProiectMDS
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,9 +210,12 @@ namespace ProiectMDS
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 

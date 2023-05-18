@@ -46,7 +46,9 @@ namespace ProiectMDS
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -56,9 +58,11 @@ namespace ProiectMDS
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -66,6 +70,7 @@ namespace ProiectMDS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -89,6 +94,7 @@ namespace ProiectMDS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -279,9 +285,30 @@ namespace ProiectMDS
             this.tabPage2.Text = "Adauga Angajat";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // openFileDialog1
+            // label9
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(76, 244);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(40, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Proiect";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(79, 260);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(144, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(79, 221);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(144, 20);
+            this.textBox5.TabIndex = 18;
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // button5
             // 
@@ -375,36 +402,59 @@ namespace ProiectMDS
             this.textBox4.TabIndex = 8;
             this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
-            // textBox5
+            // openFileDialog1
             // 
-            this.textBox5.Location = new System.Drawing.Point(79, 221);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 20);
-            this.textBox5.TabIndex = 18;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // comboBox1
+            // panel6
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(79, 260);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 21);
-            this.comboBox1.TabIndex = 19;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel6.Location = new System.Drawing.Point(0, 25);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 434);
+            this.panel6.TabIndex = 9;
             // 
-            // label9
+            // panel7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(76, 244);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Proiect";
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel7.Location = new System.Drawing.Point(539, 25);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 434);
+            this.panel7.TabIndex = 10;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel8.Location = new System.Drawing.Point(5, 454);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(534, 5);
+            this.panel8.TabIndex = 11;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = global::ProiectMDS.Properties.Resources.GR;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // Inserare2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 459);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -421,6 +471,7 @@ namespace ProiectMDS
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -456,6 +507,10 @@ namespace ProiectMDS
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

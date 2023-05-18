@@ -29,6 +29,7 @@ namespace ProiectMDS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,16 +41,25 @@ namespace ProiectMDS
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inserareProiectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.afisareProiecteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,6 +93,7 @@ namespace ProiectMDS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -140,13 +151,17 @@ namespace ProiectMDS
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.panel11);
+            this.panel3.Controls.Add(this.panel10);
+            this.panel3.Controls.Add(this.panel9);
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(241, 245);
+            this.panel3.Location = new System.Drawing.Point(240, 284);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(353, 183);
+            this.panel3.Size = new System.Drawing.Size(351, 186);
             this.panel3.TabIndex = 5;
             this.panel3.Visible = false;
             // 
@@ -164,11 +179,11 @@ namespace ProiectMDS
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(78, 140);
+            this.label4.Location = new System.Drawing.Point(108, 141);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 21);
+            this.label4.Size = new System.Drawing.Size(134, 21);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Ghita Filip Darius";
+            this.label4.Text = "Ghita Darius";
             // 
             // label3
             // 
@@ -190,24 +205,16 @@ namespace ProiectMDS
             this.label2.TabIndex = 6;
             this.label2.Text = "Proiect realizat de:";
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.menuStrip1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 25);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(808, 26);
-            this.panel4.TabIndex = 6;
-            // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserareProiectToolStripMenuItem,
             this.afisareProiecteToolStripMenuItem,
             this.graficeToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(5, 25);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(808, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -232,16 +239,112 @@ namespace ProiectMDS
             this.graficeToolStripMenuItem.Text = "Grafic";
             this.graficeToolStripMenuItem.Click += new System.EventHandler(this.graficeToolStripMenuItem_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel5.Location = new System.Drawing.Point(0, 25);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 470);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 470);
+            this.panel6.TabIndex = 8;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel7.Location = new System.Drawing.Point(803, 25);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 470);
+            this.panel7.TabIndex = 8;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel8.Location = new System.Drawing.Point(5, 490);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(798, 5);
+            this.panel8.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::ProiectMDS.Properties.Resources.GR;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel4.Location = new System.Drawing.Point(346, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 186);
+            this.panel4.TabIndex = 10;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel9.Location = new System.Drawing.Point(0, 181);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(346, 5);
+            this.panel9.TabIndex = 11;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(5, 181);
+            this.panel10.TabIndex = 12;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel11.Location = new System.Drawing.Point(5, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(341, 5);
+            this.panel11.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 495);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -251,10 +354,10 @@ namespace ProiectMDS
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,11 +376,19 @@ namespace ProiectMDS
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem inserareProiectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem afisareProiecteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem graficeToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

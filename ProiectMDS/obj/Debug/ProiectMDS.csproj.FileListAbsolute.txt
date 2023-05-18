@@ -16,3 +16,4 @@ C:\Users\Administrator\source\repos\ProiectMDS\ProiectMDS\obj\Debug\ProiectMDS.G
 C:\Users\Administrator\source\repos\ProiectMDS\ProiectMDS\obj\Debug\ProiectMDS.Afisare.resources
 C:\Users\Administrator\source\repos\ProiectMDS\ProiectMDS\obj\Debug\ProiectMDS.Inserare2.resources
 C:\Users\Administrator\source\repos\ProiectMDS\ProiectMDS\obj\Debug\ProiectMDS.Angajati.resources
+C:\Users\Administrator\source\repos\ProiectMDS\ProiectMDS\obj\Debug\ProiectMDS.Form2.resources

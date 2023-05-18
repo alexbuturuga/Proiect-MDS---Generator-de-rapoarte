@@ -33,9 +33,10 @@ namespace ProiectMDS
             // 
             // Inserare
             // 
-            this.ClientSize = new System.Drawing.Size(470, 394);
+            this.ClientSize = new System.Drawing.Size(525, 372);
             this.Name = "Inserare";
             this.Load += new System.EventHandler(this.Inserare_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Inserare_KeyDown);
             this.ResumeLayout(false);
 
         }

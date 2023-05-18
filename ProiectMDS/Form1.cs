@@ -156,5 +156,10 @@ namespace ProiectMDS
             Grafice f = new Grafice();
             f.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
